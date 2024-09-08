@@ -15,8 +15,17 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header img {
+            max-width: 100px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 10px;
         }
         section {
             padding: 20px;
@@ -54,11 +63,31 @@
         input[type="submit"]:hover {
             background-color: #555;
         }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Electrical Contractor Services</h1>
+        <img src="path-to-your-logo.png" alt="Abhishek Electricals Logo">
+        <h1>Abhishek Electricals</h1>
+        <h2>Electrical Contractor Services</h2>
     </header>
     <section>
         <h2>Our Services</h2>
@@ -71,6 +100,12 @@
             <li>Lighting Installation and Repair</li>
             <li>And much more...</li>
         </ul>
+    </section>
+    <section class="gallery">
+        <h2>Our Work</h2>
+        <img src="path-to-image1.jpg" alt="Electrical Installation">
+        <img src="path-to-image2.jpg" alt="Commercial Wiring">
+        <img src="path-to-image3.jpg" alt="Panel Upgrade">
     </section>
     <section>
         <h2>Contact Us</h2>
@@ -86,8 +121,9 @@
         </form>
     </section>
     <footer>
-        <p>&copy; 2024 Electrical Contractor Services. All rights reserved.</p>
+        <p>&copy; 2024 Abhishek Electricals. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
 
