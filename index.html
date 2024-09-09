@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electrical Contractor Services</title>
+    <title>Abhishek Electricals - Electrical Contractor Services</title>
+
+    <!-- Internal CSS for Basic Styling -->
     <style>
-        /* Basic CSS styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -18,7 +19,7 @@
             padding: 20px;
             text-align: center;
         }
-        header h1 {
+        header h1, header h2 {
             margin: 0;
         }
         header img {
@@ -81,14 +82,30 @@
             background-color: #333;
             color: #fff;
         }
+
+        /* CSS for Animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
     </style>
+
+    <!-- Link to External CSS (Optional if you move styles to a separate file) -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 <body>
+    <!-- Website Header -->
     <header>
         <img src="path-to-your-logo.png" alt="Abhishek Electricals Logo">
         <h1>Abhishek Electricals</h1>
         <h2>Electrical Contractor Services</h2>
     </header>
+
+    <!-- Services Section -->
     <section>
         <h2>Our Services</h2>
         <p>We provide a wide range of electrical contracting services including:</p>
@@ -101,12 +118,16 @@
             <li>And much more...</li>
         </ul>
     </section>
+
+    <!-- Gallery Section -->
     <section class="gallery">
         <h2>Our Work</h2>
         <img src="path-to-image1.jpg" alt="Electrical Installation">
         <img src="path-to-image2.jpg" alt="Commercial Wiring">
         <img src="path-to-image3.jpg" alt="Panel Upgrade">
     </section>
+
+    <!-- Contact Form Section -->
     <section>
         <h2>Contact Us</h2>
         <p>If you have any inquiries or would like to request our services, please fill out the form below:</p>
@@ -120,28 +141,18 @@
             <input type="submit" value="Submit">
         </form>
     </section>
+
+    <!-- Button for JavaScript Interaction -->
+    <section>
+        <button id="dynamic-button" class="fade-in">Click Me!</button>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Abhishek Electricals. All rights reserved.</p>
     </footer>
-</body>
-</html>
 
-
-<!-- index.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
-    <!-- Link to the CSS file -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Add a button to test JavaScript functionality -->
-    <button id="dynamic-button" class="fade-in">Click Me!</button>
-
-    <!-- Link to the JavaScript file -->
+    <!-- Link to External JavaScript -->
     <script src="scripts.js"></script>
 </body>
 </html>
