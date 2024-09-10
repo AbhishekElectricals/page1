@@ -144,9 +144,13 @@
     </section>
 
     <!-- Button for JavaScript Interaction -->
-    <section>
-        <button id="dynamic-button" class="fade-in">Click Me!</button>
-    </section>
+    <button id="dynamic-button" class="fade-in" onclick="scrollToFreeQuote()">Get a Free Quote!</button>
+
+<script>
+function scrollToFreeQuote() {
+    document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
 
     <!-- Footer Section -->
     <footer>
