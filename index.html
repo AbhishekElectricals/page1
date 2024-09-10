@@ -13,6 +13,13 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+        .top-bar {
+            background-color: #007BFF; /* Blue color */
+            color: #fff; /* White text color */
+            text-align: center;
+            padding: 10px 0;
+            font-size: 16px;
+        }
         header {
             background-color: #333;
             color: #fff;
@@ -98,6 +105,11 @@
     <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 <body>
+    <!-- Top Bar for Government Authorization -->
+    <div class="top-bar">
+        Government Authorized & Certified Electrical Contractor
+    </div>
+
     <!-- Website Header -->
     <header>
         <img src="LOGO.jpg" alt="Abhishek Electricals Logo">
@@ -140,17 +152,16 @@
            <textarea id="message" name="message" rows="4" required></textarea>
            <input type="submit" value="Submit">
         </form>
-
     </section>
 
     <!-- Button for JavaScript Interaction -->
     <button id="dynamic-button" class="fade-in" onclick="scrollToFreeQuote()">Get a Free Quote!</button>
 
-<script>
-function scrollToFreeQuote() {
-    document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });
-}
-</script>
+    <script>
+        function scrollToFreeQuote() {
+            document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 
     <!-- Footer Section -->
     <footer>
