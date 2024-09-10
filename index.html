@@ -41,6 +41,39 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for a modern effect */
 	    animation: pulse 2s infinite; /* Apply the pulsing animation */
         }
+   
+	/* Basic styling for the logo container */
+        .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Adjust height as needed */
+    background-color: #333; /* Background color */
+    padding: 10px;
+    position: relative;
+    margin-bottom: 20px; /* Space below the logo */
+       }
+
+/* Styling for the animated AE logo */
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px; /* Adjust size as needed */
+    font-weight: bold;
+    color: #00f; /* Electric blue */
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    animation: electric 1.5s infinite;
+}
+
+/* Animation for the electric effect */
+@keyframes electric {
+    0% { text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f; }
+    50% { text-shadow: 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f; }
+    100% { text-shadow: 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f; }
+}
+
+
         header {
             background-color: #333;
             color: #fff;
@@ -126,7 +159,12 @@
     <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 <body>
-    <!-- Top Bar for Government Authorization -->
+       <!-- Animated AE Logo -->
+<div class="logo-container">
+    <div class="logo">AE</div>
+</div>
+
+	<!-- Top Bar for Government Authorization -->
     <div class="top-bar">
         Government Authorized & Certified Electrical Contractor
     </div>
