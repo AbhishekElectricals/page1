@@ -1,19 +1,24 @@
-<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!-- This is the root element of the HTML document.
+     xmlns defines that the document uses XHTML.
+     lang="en" indicates that the content is in English. -->
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Sets the character encoding to UTF-8, ensuring proper text rendering. -->
 
-    <meta name="description" content="Welcome to the site. Explore our content and find what you're looking for." />
+    <meta name="description" content="HTTrack is an easy-to-use website mirror utility..." />
     <!-- A description for search engines and social media platforms. -->
 
-    <meta name="keywords" content="site, content, example" />
+    <meta name="keywords" content="httrack, HTTRACK, HTTrack,..." />
     <!-- Keywords for search engine optimization (SEO). -->
 
-    <title>Local Index - Your Website</title>
+    <title>Local index - HTTrack Website Copier</title>
     <!-- Sets the title of the page displayed in the browser tab. -->
 
     <style type="text/css">
+        <!-- Internal CSS to define the page's styles. -->
+
         body {
             margin: 0;
             padding: 0;
@@ -21,10 +26,12 @@
             margin-top: 8px;
             background: #77b;
         }
+        /* Sets page margins and background color for the body. */
 
         body, td {
             font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
         }
+        /* Sets font style for the body and table cells. */
 
         #subTitle {
             background: #000;
@@ -32,30 +39,39 @@
             padding: 4px;
             font-weight: bold;
         }
+        /* Styles the subtitle with a black background and white text. */
 
         #siteNavigation a, #siteNavigation .current {
             font-weight: bold;
             color: #448;
         }
+        /* Styles for navigation links: bold font and blue color. */
 
-        #siteNavigation a:link, #siteNavigation a:visited {
+        #siteNavigation a:link {
             text-decoration: none;
         }
+        #siteNavigation a:visited {
+            text-decoration: none;
+        }
+        /* Removes underlining from links. */
 
         #siteNavigation .current {
             background-color: #ccd;
         }
+        /* Highlights the current page in navigation with a different background color. */
 
         #siteNavigation a:hover {
             text-decoration: none;
             background-color: #fff;
             color: #000;
         }
+        /* Changes link background and text color when hovered. */
 
         #siteNavigation a:active {
             text-decoration: none;
             background-color: #ccc;
         }
+        /* Styles link when clicked. */
 
         a:link {
             text-decoration: underline;
@@ -72,6 +88,7 @@
         a:active {
             text-decoration: underline;
         }
+        /* General link styles for unvisited, visited, hovered, and active states. */
 
         #pageContent {
             clear: both;
@@ -83,10 +100,12 @@
             background-repeat: no-repeat;
             background-position: top right;
         }
+        /* Styles for the main content area with padding, a border, and a background image. */
 
         #pageContent, #siteNavigation {
             background-color: #ccd;
         }
+        /* Background color for both the main content and navigation areas. */
 
         .imgLeft {
             float: left;
@@ -98,6 +117,7 @@
             margin-left: 10px;
             margin-bottom: 10px;
         }
+        /* Float images left or right with margins for spacing. */
 
         hr {
             height: 1px;
@@ -105,6 +125,7 @@
             background-color: #000;
             margin-bottom: 15px;
         }
+        /* Style for horizontal lines. */
 
         h1 {
             margin: 0;
@@ -126,18 +147,22 @@
             font-weight: bold;
             font-size: 1.18em;
         }
+        /* Styles for different heading levels (h1 to h4). */
 
         .blak {
             background-color: #000;
         }
+        /* Sets a black background. */
 
         .hide {
             display: none;
         }
+        /* Hides elements when this class is applied. */
 
         .tableWidth {
             min-width: 400px;
         }
+        /* Sets a minimum width for tables. */
 
         .tblRegular {
             border-collapse: collapse;
@@ -147,14 +172,17 @@
             background-image: url(fade.gif);
             border: 2px solid #99c;
         }
+        /* Styles for regular table cells with padding, background, and border. */
 
         .tblHeaderColor, .tblHeaderColor td {
             background: #99c;
         }
+        /* Applies background color to table headers. */
 
         .tblNoBorder td {
             border: 0;
         }
+        /* Removes borders from cells in tables with this class. */
     </style>
 </head>
 
@@ -164,8 +192,8 @@
     <!-- Table structure to center the subtitle and content. -->
     <table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
         <tr>
-            <td id="subTitle">Welcome to Your Website</td>
-            <!-- Updated subtitle in the table's single cell. -->
+            <td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
+            <!-- Subtitle in the table's single cell. -->
         </tr>
     </table>
 
@@ -182,14 +210,17 @@
                                     <td id="pageContent">
                                         <!-- Main content area inside the nested table. -->
 
-                                        <h1 align="center">Index of Available Sites:</h1>
+                                        <meta name="generator" content="HTTrack Website Copier/3.x">
+                                        <!-- Indicates the page was generated by HTTrack -->
+
+                                        <h1 align="center">Index of locally available sites:</h1>
                                         <!-- Heading for the page, centered. -->
 
                                         <table border="0" width="100%" cellspacing="1" cellpadding="0">
                                             <tr>
                                                 <td background="fade.gif">
                                                     &middot;
-                                                    <a href="http://www.muthelectric.com/index.html">
+                                                    <a href="www.muthelectric.com/index.html">
                                                         Welcome | Muth Electric Inc.
                                                     </a>
                                                     <!-- A link to an external site (Muth Electric Inc.). -->
@@ -201,9 +232,12 @@
                                         <!-- Line breaks to add space between elements. -->
 
                                         <h6 align="right">
-                                            <i>Site created and maintained by [Your Name/Company]</i>
+                                            <i>Mirror and index made by HTTrack Website Copier [XR&CO'2008]</i>
                                         </h6>
-                                        <!-- Small, italic text aligned to the right indicating the creator of the page. -->
+                                        <!-- Small, italic text aligned to the right indicating HTTrack generated the page. -->
+
+                                        <meta http-equiv="Refresh" content="0; URL=www.muthelectric.com/index.html">
+                                        <!-- Meta tag that redirects the user to another site after 0 seconds. -->
                                     </td>
                                 </tr>
                             </table>
@@ -217,11 +251,11 @@
     <!-- Footer table. -->
     <table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
         <tr>
-            <td id="footer"><small>&copy; 2024 [Your Name/Company] - Web Design: [Your Designer's Name].</small></td>
-            <!-- Footer text with updated credits. -->
+            <td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
+            <!-- Footer text with credits. -->
         </tr>
     </table>
 </body>
 
 </html>
-
+<!-- End of the HTML document. -->
