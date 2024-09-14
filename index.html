@@ -15,76 +15,82 @@
             background-color: #f4f4f4;
         }
 
-	@keyframes pulse {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.05);
-        opacity: 0.8;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
         .top-bar {
             background-color: #007BFF; /* Blue color */
             color: #fff; /* White text color */
             text-align: center;
             padding: 15px 0;
             font-size: 20px;
-	    font-weight: bold; /* Make text bold */
+            font-weight: bold; /* Make text bold */
             letter-spacing: 1px; /* Optional: Add letter spacing for better readability */
-	    font-family: 'Roboto', sans-serif; /* Stylish font */
+            font-family: 'Roboto', sans-serif; /* Stylish font */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for a modern effect */
-	    animation: pulse 2s infinite; /* Apply the pulsing animation */
+            animation: pulse 2s infinite; /* Apply the pulsing animation */
         }
-   
-	/* Basic styling for the logo container */
+
+        /* Basic styling for the logo container */
         .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px; /* Adjust height as needed */
-    background-color: #333; /* Background color */
-    padding: 10px;
-    position: relative;
-    margin-bottom: 20px; /* Space below the logo */
-       }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px; /* Adjust height as needed */
+            background-color: #333; /* Background color */
+            padding: 10px;
+            position: relative;
+            margin-bottom: 20px; /* Space below the logo */
+        }
 
-/* Styling for the animated AE logo */
-.logo {
-    font-family: 'Roboto', sans-serif;
-    font-size: 80px; /* Adjust size as needed */
-    font-weight: bold;
-    color: #00f; /* Electric blue */
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    animation: electric 1.5s infinite;
-}
+        /* Styling for the animated AE logo */
+        .logo {
+            font-family: 'Roboto', sans-serif;
+            font-size: 80px; /* Adjust size as needed */
+            font-weight: bold;
+            color: #00f; /* Electric blue */
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            animation: electric 1.5s infinite;
+        }
 
-/* Animation for the electric effect */
-@keyframes electric {
-    0% { text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f; }
-    50% { text-shadow: 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f; }
-    100% { text-shadow: 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f; }
-}
-      /* Animation for glowing effect */
-@keyframes glow {
-    0% { color: #00f; }
-    50% { color: #00ffcc; }
-    100% { color: #00f; }
-}
+        /* Electric spark effect using unpredictable flickering */
+        @keyframes electric {
+            0% { text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f; }
+            25% { text-shadow: 0 0 20px #00ffcc, 0 0 30px #00f, 0 0 40px #00ffcc; }
+            50% { text-shadow: 0 0 30px #00ffcc, 0 0 40px #ff0, 0 0 50px #ff0; }
+            75% { text-shadow: 0 0 50px #ff0, 0 0 60px #ff0, 0 0 70px #f00; }
+            100% { text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f; }
+        }
 
-/* Animation for bouncing effect */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-30px); }
-    60% { transform: translateY(-15px); }
-}
+        /* Stronger, more erratic glowing effect */
+        @keyframes aggressive-glow {
+            0% { color: #00f; }
+            25% { color: #ff0; }
+            50% { color: #f00; }
+            75% { color: #ff0; }
+            100% { color: #00f; }
+        }
+
+        /* Pulsating with random intensity */
+        @keyframes aggressive-bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px) scale(1.1); }
+            60% { transform: translateY(-10px) scale(1.05); }
+        }
 
         header {
             background-color: #333;
@@ -166,17 +172,15 @@
             animation: fadeIn 2s ease-in-out;
         }
     </style>
-
-    <!-- Link to External CSS (Optional if you move styles to a separate file) -->
-    <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 <body>
-       <!-- Animated AE Logo -->
-<div class="logo-container">
-    <div class="logo">AE</div>
-</div>
 
-	<!-- Top Bar for Government Authorization -->
+    <!-- Animated AE Logo -->
+    <div class="logo-container">
+        <div class="logo">AE</div>
+    </div>
+
+    <!-- Top Bar for Government Authorization -->
     <div class="top-bar">
         Government Authorized & Certified Electrical Contractor
     </div>
@@ -228,19 +232,19 @@
     <!-- Button for JavaScript Interaction -->
     <button id="dynamic-button" class="fade-in" onclick="scrollToFreeQuote()">Get a Free Quote!</button>
 
-    <script>
-        function scrollToFreeQuote() {
-            document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
-
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Abhishek Electricals. All rights reserved.</p>
     </footer>
 
-    <!-- Link to External JavaScript -->
-    <script src="scripts.js"></script>
-</body>
-</html>
+    <!-- Dynamic Flicker Script -->
+    <script>
+        // JavaScript for dynamic flickering
+        document.addEventListener('DOMContentLoaded', function() {
+            const logo = document.querySelector('.logo');
+
+            // Randomize flicker intensity at intervals
+            setInterval(() => {
+                const randomIntensity = Math.random() * 2;
+                logo.style.transform
 
