@@ -1,75 +1,72 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-    <!-- Metadata for the document -->
-    <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
+    <meta charset="UTF-8">
     <meta name="description" content="Abhishek Electricals provides expert electrical contracting services including HT and LT installations, maintenance, and repairs. Serving residential and commercial clients with reliable and professional electrical solutions. Contact us for your electrical needs.">
     <meta name="keywords" content="Electrical contractor, HT electrical services, LT electrical services, electrical maintenance, electrical repairs, residential electrical services, commercial electrical services, electrical installations, Abhishek Electricals">
-    <title>Abhishek Electrical's - Electrical Contractor Services</title> <!-- Title of the page shown in the browser tab -->
-</head>
-
-    <!-- Styles for the HTML document -->
+    <title>Abhishek Electrical's - Electrical Contractor Services</title>
+    
     <style>
         body {
-            margin: 0; /* Removes default margins */
-            padding: 0; /* Removes default padding */
-            margin-bottom: 15px; /* Adds space at the bottom */
-            margin-top: 8px; /* Adds space at the top */
-            background: #77b; /* Sets a background color */
-            font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; /* Sets font style */
+            margin: 0;
+            padding: 0;
+            margin-bottom: 15px;
+            margin-top: 8px;
+            background: #77b;
+            font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
         }
-        
+
         #subTitle {
-            background: #000; /* Black background */
-            color: #fff; /* White text color */
-            padding: 4px; /* Padding inside the subtitle */
-            font-weight: bold; /* Bold text */
+            background: #000;
+            color: #fff;
+            padding: 4px;
+            font-weight: bold;
         }
-        
+
         #siteNavigation a, #siteNavigation .current {
-            font-weight: bold; /* Bold text */
-            color: #448; /* Link color */
+            font-weight: bold;
+            color: #448;
         }
-        #siteNavigation a:link { text-decoration: none; } /* Link styling */
-        #siteNavigation a:visited { text-decoration: none; } /* Visited link styling */
-        #siteNavigation .current { background-color: #ccd; } /* Current page link styling */
-        #siteNavigation a:hover { text-decoration: none; background-color: #fff; color: #000; } /* Hover link styling */
-        #siteNavigation a:active { text-decoration: none; background-color: #ccc; } /* Active link styling */
-        
-        a:link, a:visited { text-decoration: underline; } /* Underlined links */
-        a:hover { text-decoration: underline; color: #c00; } /* Hovered links */
-        a:active { text-decoration: underline; } /* Active links */
-        
+
+        #siteNavigation a:link, #siteNavigation a:visited { text-decoration: none; }
+        #siteNavigation .current { background-color: #ccd; }
+        #siteNavigation a:hover { text-decoration: none; background-color: #fff; color: #000; }
+        #siteNavigation a:active { text-decoration: none; background-color: #ccc; }
+
+        a:link, a:visited { text-decoration: underline; }
+        a:hover { text-decoration: underline; color: #c00; }
+        a:active { text-decoration: underline; }
+
         #pageContent {
-            clear: both; /* Clears floats */
-            border-bottom: 6px solid #000; /* Bottom border */
-            padding: 10px; /* Padding around content */
-            padding-top: 20px; /* Extra top padding */
-            line-height: 1.65em; /* Line height for readability */
-            background-image: url('backblue.gif'); /* Background image */
-            background-repeat: no-repeat; /* Prevents background image from repeating */
-            background-position: top right; /* Background image position */
-            background-color: #ccd; /* Fallback background color */
+            clear: both;
+            border-bottom: 6px solid #000;
+            padding: 10px;
+            padding-top: 20px;
+            line-height: 1.65em;
+            background-image: url('backblue.gif');
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-color: #ccd;
         }
-        
-        .imgLeft { float: left; margin-right: 10px; margin-bottom: 10px; } /* Floating images to the left */
-        .imgRight { float: right; margin-left: 10px; margin-bottom: 10px; } /* Floating images to the right */
-        
-        hr { height: 1px; color: #000; background-color: #000; margin-bottom: 15px; } /* Horizontal rule styling */
-        
-        h1 { margin: 0; font-weight: bold; font-size: 2em; } /* Main header styling */
-        h2 { margin: 0; font-weight: bold; font-size: 1.6em; } /* Subheader styling */
-        h3 { margin: 0; font-weight: bold; font-size: 1.3em; } /* Tertiary header styling */
-        h4 { margin: 0; font-weight: bold; font-size: 1.18em; } /* Quaternary header styling */
-        
-        .blak { background-color: #000; } /* Black background for sections */
-        .hide { display: none; } /* Hides elements */
-        .tableWidth { min-width: 400px; } /* Minimum width for tables */
-        
-        .tblRegular { border-collapse: collapse; } /* Collapses table borders */
-        .tblRegular td { padding: 6px; background-image: url('fade.gif'); border: 2px solid #99c; } /* Regular table cell styling */
-        .tblHeaderColor, .tblHeaderColor td { background: #99c; } /* Table header color */
-        .tblNoBorder td { border: 0; } /* Table cell with no border */
+
+        .imgLeft { float: left; margin-right: 10px; margin-bottom: 10px; }
+        .imgRight { float: right; margin-left: 10px; margin-bottom: 10px; }
+
+        hr { height: 1px; color: #000; background-color: #000; margin-bottom: 15px; }
+
+        h1 { margin: 0; font-weight: bold; font-size: 2em; }
+        h2 { margin: 0; font-weight: bold; font-size: 1.6em; }
+        h3 { margin: 0; font-weight: bold; font-size: 1.3em; }
+        h4 { margin: 0; font-weight: bold; font-size: 1.18em; }
+
+        .blak { background-color: #000; }
+        .hide { display: none; }
+        .tableWidth { min-width: 400px; }
+
+        .tblRegular { border-collapse: collapse; }
+        .tblRegular td { padding: 6px; background-image: url('fade.gif'); border: 2px solid #99c; }
+        .tblHeaderColor, .tblHeaderColor td { background: #99c; }
+        .tblNoBorder td { border: 0; }
     </style>
 </head>
 <body>
@@ -97,15 +94,13 @@
                                         <tr>
                                             <td background="fade.gif">
                                                 &middot; <!-- Bullet point -->
-                                                <a href="www.abhishekelectricals.com/index.html">Welcome | Abhishek Electricals Inc.</a> <!-- Link to local site -->
+                                                <a href="https://www.abhishekelectricals.com/index.html">Welcome | Abhishek Electricals Inc.</a>
                                             </td>
                                         </tr>
                                     </table>
                                     <br><br><br>
                                     <h6 align="right">
-                                    <!-- You can add more footer details here if needed -->    
                                     </h6>
-                                    
                                     <!-- Page content ends here -->
                                 </td>
                             </tr>
