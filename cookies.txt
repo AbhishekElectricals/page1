@@ -1,7 +1,4 @@
 # HTTrack Website Copier Cookie File
 # This file format is compatible with Netscape cookies
-.hsforms.net	TRUE	/	FALSE	1999999999	__cf_bm	uLCcR_AwZJUjjOwWsaT7feyFP2oL0.MaaY6Naksos0o-1726294048-1.0.1.1-KKa7In1o39P579LQ26DvLHj2FHfIvsZ1jAy8IE3fxLTvM.HTVWUC6_rzkg6X_Shy2lApo2RueCdtauuY3DjsnA
-.www.muthelectric.com	TRUE	/	FALSE	1999999999	__cf_bm	xA7zMi08DuXteEFF0mY_g4lJuUVTbL8uiMXAa4oIwK0-1726294055-1.0.1.1-TaAilKwFtm.uF3KXr4YJS6E.CQ4SXbqG1cRsLT.M_OSIsF1EvjREB957T9E3mVq.4pYXUPcp8XbS4D1sizL27g
-.www.muthelectric.com	TRUE	/	FALSE	1999999999	__cfruid	6a9778428155b893e2a7b353e66070a46ae2d5cf-1726294055
-www.muthelectric.com	TRUE	/	FALSE	1999999999	SameSite	None
+atkinselectricga.com	TRUE	/	FALSE	1999999999	PHPSESSID	6e6rcje4esn6cmububnbvf76g1
 

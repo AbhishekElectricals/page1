@@ -1,15 +1,199 @@
-HTTrack3.49-2+htsswf+htsjava launched on Sat, 14 Sep 2024 11:34:33 at https://www.muthelectric.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
-(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.muthelectric.com/ -O1 "D:\Website\1" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 15 Sep 2024 23:37:48 at https://atkinselectricga.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://atkinselectricga.com/ -O1 "D:\Website\2\https___atkinselectricga.com_" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
 
 Information, Warnings and Errors reported for this mirror:
 note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-11:35:52	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://www.muthelectric.com/)
-11:35:52	Warning: 	Temporary Redirect for https://www.muthelectric.com/?hsLang=en
-11:35:52	Warning: 	File has moved from https://www.muthelectric.com/?hsLang=en to https://www.muthelectric.com/
-11:37:36	Error: 	"Not Found" (404) at link https://www.muthelectric.com/hubfs/88.9606 (from https://www.muthelectric.com/hubfs/Muth_Web_Favicon.svg)
+23:38:21	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=5
+23:38:21	Warning: 	File has moved from https://atkinselectricga.com/?p=5 to https://atkinselectricga.com/home/
+23:40:03	Warning: 	Moved Permanently for https://atkinselectricga.com/electrical-contractor/
+23:40:03	Warning: 	File has moved from https://atkinselectricga.com/electrical-contractor/ to https://atkinselectricga.com/services/electrical-contractor/
+23:40:03	Warning: 	Moved Permanently for https://atkinselectricga.com/electrical-repair/
+23:40:03	Warning: 	File has moved from https://atkinselectricga.com/electrical-repair/ to https://atkinselectricga.com/services/electrical-repair/
+23:40:07	Warning: 	Moved Permanently for https://atkinselectricga.com/landscape-lighting/
+23:40:07	Warning: 	File has moved from https://atkinselectricga.com/landscape-lighting/ to https://atkinselectricga.com/services/landscape-lighting/
+23:40:14	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=35
+23:40:14	Warning: 	File has moved from https://atkinselectricga.com/?p=35 to https://atkinselectricga.com/contact-us/
+23:40:17	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=6
+23:40:17	Warning: 	File has moved from https://atkinselectricga.com/?p=6 to https://atkinselectricga.com/about-us/
+23:40:21	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=7
+23:40:21	Warning: 	File has moved from https://atkinselectricga.com/?p=7 to https://atkinselectricga.com/services/
+23:40:23	Warning: 	Moved Permanently for https://atkinselectricga.com/electrical-inspections/
+23:40:23	Warning: 	File has moved from https://atkinselectricga.com/electrical-inspections/ to https://atkinselectricga.com/services/electrical-inspections/
+23:40:24	Warning: 	Moved Permanently for https://atkinselectricga.com/lighting-installation/
+23:40:24	Warning: 	File has moved from https://atkinselectricga.com/lighting-installation/ to https://atkinselectricga.com/services/lighting-installation/
+23:40:24	Warning: 	Moved Permanently for https://atkinselectricga.com/new-construction-electrical/
+23:40:24	Warning: 	File has moved from https://atkinselectricga.com/new-construction-electrical/ to https://atkinselectricga.com/services/new-construction-electrical/
+23:40:26	Warning: 	Moved Permanently for https://atkinselectricga.com/appliance-installation/
+23:40:26	Warning: 	File has moved from https://atkinselectricga.com/appliance-installation/ to https://atkinselectricga.com/services/appliance-installation/
+23:40:27	Warning: 	Moved Permanently for https://atkinselectricga.com/hot-tub-and-sauna-electrical-services/
+23:40:27	Warning: 	File has moved from https://atkinselectricga.com/hot-tub-and-sauna-electrical-services/ to https://atkinselectricga.com/services/hot-tub-and-sauna-electrical-services/
+23:40:30	Warning: 	Moved Permanently for https://atkinselectricga.com/electrical-retrofitting/
+23:40:30	Warning: 	File has moved from https://atkinselectricga.com/electrical-retrofitting/ to https://atkinselectricga.com/services/electrical-retrofitting/
+23:40:31	Warning: 	Moved Permanently for https://atkinselectricga.com/electrician/
+23:40:31	Warning: 	File has moved from https://atkinselectricga.com/electrician/ to https://atkinselectricga.com/services/electrician/
+23:40:33	Warning: 	Moved Permanently for https://atkinselectricga.com/emergency-electrician/
+23:40:33	Warning: 	File has moved from https://atkinselectricga.com/emergency-electrician/ to https://atkinselectricga.com/services/emergency-electrician/
+23:40:34	Warning: 	Moved Permanently for https://atkinselectricga.com/lighting-electrician/
+23:40:34	Warning: 	File has moved from https://atkinselectricga.com/lighting-electrician/ to https://atkinselectricga.com/services/lighting-electrician/
+23:40:36	Warning: 	Moved Permanently for https://atkinselectricga.com/rewiring-service/
+23:40:36	Warning: 	File has moved from https://atkinselectricga.com/rewiring-service/ to https://atkinselectricga.com/services/rewiring-service/
+23:40:37	Warning: 	Moved Permanently for https://atkinselectricga.com/standby-generators/
+23:40:37	Warning: 	File has moved from https://atkinselectricga.com/standby-generators/ to https://atkinselectricga.com/services/standby-generators/
+23:40:40	Warning: 	Moved Permanently for https://atkinselectricga.com/surge-protection/
+23:40:40	Warning: 	File has moved from https://atkinselectricga.com/surge-protection/ to https://atkinselectricga.com/services/surge-protection/
+23:40:42	Warning: 	Moved Permanently for https://atkinselectricga.com/security-lighting/
+23:40:42	Warning: 	File has moved from https://atkinselectricga.com/security-lighting/ to https://atkinselectricga.com/services/security-lighting/
+23:40:43	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=8
+23:40:43	Warning: 	File has moved from https://atkinselectricga.com/?p=8 to https://atkinselectricga.com/services/electrical-contractor/
+23:40:47	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=9
+23:40:47	Warning: 	File has moved from https://atkinselectricga.com/?p=9 to https://atkinselectricga.com/services/electrical-inspections/
+23:40:50	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=12
+23:40:50	Warning: 	File has moved from https://atkinselectricga.com/?p=12 to https://atkinselectricga.com/services/landscape-lighting/
+23:40:50	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=13
+23:40:50	Warning: 	File has moved from https://atkinselectricga.com/?p=13 to https://atkinselectricga.com/services/lighting-installation/
+23:40:50	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=14
+23:40:50	Warning: 	File has moved from https://atkinselectricga.com/?p=14 to https://atkinselectricga.com/services/new-construction-electrical/
+23:40:50	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=15
+23:40:50	Warning: 	File has moved from https://atkinselectricga.com/?p=15 to https://atkinselectricga.com/services/appliance-installation/
+23:40:50	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=17
+23:40:50	Warning: 	File has moved from https://atkinselectricga.com/?p=17 to https://atkinselectricga.com/services/electrical-repair/
+23:40:50	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=18
+23:40:50	Warning: 	File has moved from https://atkinselectricga.com/?p=18 to https://atkinselectricga.com/services/electrical-retrofitting/
+23:40:50	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=19
+23:40:50	Warning: 	File has moved from https://atkinselectricga.com/?p=19 to https://atkinselectricga.com/services/electrician/
+23:40:50	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=20
+23:40:50	Warning: 	File has moved from https://atkinselectricga.com/?p=20 to https://atkinselectricga.com/services/emergency-electrician/
+23:40:50	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=21
+23:40:50	Warning: 	File has moved from https://atkinselectricga.com/?p=21 to https://atkinselectricga.com/services/lighting-electrician/
+23:40:50	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=22
+23:40:50	Warning: 	File has moved from https://atkinselectricga.com/?p=22 to https://atkinselectricga.com/services/rewiring-service/
+23:40:50	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=23
+23:40:50	Warning: 	File has moved from https://atkinselectricga.com/?p=23 to https://atkinselectricga.com/services/standby-generators/
+23:40:50	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=24
+23:40:50	Warning: 	File has moved from https://atkinselectricga.com/?p=24 to https://atkinselectricga.com/services/surge-protection/
+23:40:51	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=27
+23:40:51	Warning: 	File has moved from https://atkinselectricga.com/?p=27 to https://atkinselectricga.com/services/security-lighting/
+23:40:51	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=29
+23:40:51	Warning: 	File has moved from https://atkinselectricga.com/?p=29 to https://atkinselectricga.com/services/ceiling-fan-installation/
+23:40:51	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=31
+23:40:51	Warning: 	File has moved from https://atkinselectricga.com/?p=31 to https://atkinselectricga.com/services/hot-tub-and-sauna-electrical-services/
+23:40:51	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=34
+23:40:51	Warning: 	File has moved from https://atkinselectricga.com/?p=34 to https://atkinselectricga.com/faq/
+23:40:51	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=512
+23:40:51	Warning: 	File has moved from https://atkinselectricga.com/?p=512 to https://atkinselectricga.com/service-areas/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=458
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=458 to https://atkinselectricga.com/areas-of-service/rome-appliance-installation/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=459
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=459 to https://atkinselectricga.com/areas-of-service/cedartown-appliance-installation/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=460
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=460 to https://atkinselectricga.com/areas-of-service/hiram-appliance-installation/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=461
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=461 to https://atkinselectricga.com/areas-of-service/rome-ceiling-fan-installation/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/ceiling-fan-installation/
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/ceiling-fan-installation/ to https://atkinselectricga.com/services/ceiling-fan-installation/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=462
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=462 to https://atkinselectricga.com/areas-of-service/cedartown-ceiling-fan-installation/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=463
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=463 to https://atkinselectricga.com/areas-of-service/hiram-ceiling-fan-installation/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=464
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=464 to https://atkinselectricga.com/areas-of-service/rome-electrical-contractor/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=465
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=465 to https://atkinselectricga.com/areas-of-service/cedartown-electrical-contractor/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=466
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=466 to https://atkinselectricga.com/areas-of-service/hiram-electrical-contractor/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=467
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=467 to https://atkinselectricga.com/areas-of-service/rome-electrical-contractor-services/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=468
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=468 to https://atkinselectricga.com/areas-of-service/cedartown-electrical-contractor-services/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=469
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=469 to https://atkinselectricga.com/areas-of-service/hiram-electrical-contractor-services/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=470
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=470 to https://atkinselectricga.com/areas-of-service/rome-electrical-inspection/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=471
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=471 to https://atkinselectricga.com/areas-of-service/cedartown-electrical-inspection/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=472
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=472 to https://atkinselectricga.com/areas-of-service/hiram-electrical-inspection/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=473
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=473 to https://atkinselectricga.com/areas-of-service/rome-electrical-repair/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=474
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=474 to https://atkinselectricga.com/areas-of-service/cedartown-electrical-repair/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=475
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=475 to https://atkinselectricga.com/areas-of-service/hiram-electrical-repair/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=476
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=476 to https://atkinselectricga.com/areas-of-service/rome-electrical-retrofitting/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=477
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=477 to https://atkinselectricga.com/areas-of-service/cedartown-electrical-retrofitting/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=478
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=478 to https://atkinselectricga.com/areas-of-service/hiram-electrical-retrofitting/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=479
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=479 to https://atkinselectricga.com/areas-of-service/rome-electrician/
+23:46:32	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=480
+23:46:32	Warning: 	File has moved from https://atkinselectricga.com/?p=480 to https://atkinselectricga.com/areas-of-service/cedartown-electrician/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=481
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=481 to https://atkinselectricga.com/areas-of-service/hiram-electrician/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=482
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=482 to https://atkinselectricga.com/areas-of-service/rome-emergency-electrical/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=483
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=483 to https://atkinselectricga.com/areas-of-service/cedartown-emergency-electrical/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=484
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=484 to https://atkinselectricga.com/areas-of-service/hiram-emergency-electrical/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=485
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=485 to https://atkinselectricga.com/areas-of-service/rome-hot-tub-and-sauna-electrical/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=486
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=486 to https://atkinselectricga.com/areas-of-service/cedartown-hot-tub-and-sauna-electrical/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=487
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=487 to https://atkinselectricga.com/areas-of-service/hiram-hot-tub-and-sauna-electrical/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=488
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=488 to https://atkinselectricga.com/areas-of-service/rome-landscape-lighting/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=489
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=489 to https://atkinselectricga.com/areas-of-service/cedartown-landscape-lighting/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=490
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=490 to https://atkinselectricga.com/areas-of-service/hiram-landscape-lighting/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=491
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=491 to https://atkinselectricga.com/areas-of-service/rome-lighting-electrician/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=492
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=492 to https://atkinselectricga.com/areas-of-service/cedartown-lighting-electrician/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=493
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=493 to https://atkinselectricga.com/areas-of-service/hiram-lighting-electrician/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=494
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=494 to https://atkinselectricga.com/areas-of-service/rome-lighting-installation/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=495
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=495 to https://atkinselectricga.com/areas-of-service/cedartown-lighting-installation/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=496
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=496 to https://atkinselectricga.com/areas-of-service/hiram-lighting-installation/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=497
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=497 to https://atkinselectricga.com/areas-of-service/rome-new-construction-electrical/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=498
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=498 to https://atkinselectricga.com/areas-of-service/cedartown-new-construction-electrical/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=499
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=499 to https://atkinselectricga.com/areas-of-service/hiram-new-construction-electrical/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=500
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=500 to https://atkinselectricga.com/areas-of-service/rome-rewiring-service/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=501
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=501 to https://atkinselectricga.com/areas-of-service/cedartown-rewiring-service/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=502
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=502 to https://atkinselectricga.com/areas-of-service/hiram-rewiring-service/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=503
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=503 to https://atkinselectricga.com/areas-of-service/rome-security-lighting/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=504
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=504 to https://atkinselectricga.com/areas-of-service/cedartown-security-lighting/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=505
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=505 to https://atkinselectricga.com/areas-of-service/hiram-security-lighting/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=506
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=506 to https://atkinselectricga.com/areas-of-service/rome-standby-generator/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=507
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=507 to https://atkinselectricga.com/areas-of-service/cedartown-standby-generator/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=508
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=508 to https://atkinselectricga.com/areas-of-service/hiram-standby-generator/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=509
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=509 to https://atkinselectricga.com/areas-of-service/rome-surge-protection/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=510
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=510 to https://atkinselectricga.com/areas-of-service/cedartown-surge-protection/
+23:46:33	Warning: 	Moved Permanently for https://atkinselectricga.com/?p=511
+23:46:33	Warning: 	File has moved from https://atkinselectricga.com/?p=511 to https://atkinselectricga.com/areas-of-service/hiram-surge-protection/
 
-HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 3 seconds : 185 links scanned, 181 files written (22528350 bytes overall) [20918430 bytes received at 114308 bytes/sec], 2511000 bytes transferred using HTTP compression in 58 files, ratio 19%, 10.7 requests per connection
-(2 errors, 2 warnings, 0 messages)
+HTTrack Website Copier/3.49-2 mirror complete in 8 minutes 46 seconds : 337 links scanned, 242 files written (5472125 bytes overall) [3695540 bytes received at 7025 bytes/sec], 2873637 bytes transferred using HTTP compression in 103 files, ratio 28%, 2.5 requests per connection
+(No errors, 188 warnings, 0 messages)
