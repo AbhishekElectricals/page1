@@ -4,6 +4,7 @@
     <!-- Add the Google Font link here -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
  <style>
+    /* CSS for flip box */
     .flip {
     background-size: cover; /* Ensures the image covers the entire element */
     background-position: center; /* Centers the image within the element */
@@ -75,6 +76,25 @@
     .back {
         position: relative;
         height: 100%;
+    }
+
+    /* Add the CSS for the top bar here */
+        .top-bar {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333; /* Dark text color */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Add some padding */
+    font-weight: bold; /* Make the text bold */
+    font-family: 'Poppins', sans-serif;
+    width: 100%; /* Ensure it spans the full width */
+    position: fixed; /* Fix the bar at the top */
+    top: 0; /* Stick it to the top of the page */
+    left: 0;
+    z-index: 9999; /* Make sure it's on top of other elements */
+        }
+
+    body {
+        padding-top: 50px; /* Adjust based on the height of your top bar */
     }
 
 </style>
@@ -168,12 +188,15 @@
         ga('create', 'UA-125710529-20', 'auto');
         ga('send', 'pageview');
     </script>
+
 </head>
 <body class="page-template-default page page-id-5">
+	<!-- Top Bar for Government Authorization -->
+    <div class="top-bar">
+        Government Authorized & Certified Electrical Contractor
+    </div>
     <!-- Main body content starts here -->
 
-</body>
-</html>
 <header class="header-wrapper fadein-150" id="sticky-header">
   <!-- Header with company logo, business information, and navigation -->
   <div class="header-inner-wrapper fadein-800">
@@ -241,7 +264,7 @@
     
     <!-- Phone Contact Section -->
     <div class="large-3 medium-12 columns header-phone text-center fadein-900">
-      <a class="click-to-call" href="tel:7020037939">7385530565</a>
+	    <a class="click-to-call" href="tel:7020037939"><strong>9423418563,7385530565</strong></a>
       <span class="hide-for-small-only"><strong>Call us today for assistance</strong></span>
     </div>
   </div>
