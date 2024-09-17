@@ -77,19 +77,21 @@
         position: relative;
         height: 100%;
     }
-.blue-bar {
+    .blue-bar {
     background-color: #007bff; /* Blue background */
     padding: 10px;
     text-align: center;
 }
 
 .blue-bar h1 {
-    background: linear-gradient(145deg, #333, #000); /* Dark glossy black gradient */
-    padding: 10px;
-    text-align: center;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a glossy effect */
+    font-family: 'Poppins', sans-serif; /* Use Poppins for consistency */
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    color: white;
 }
-  @keyframes rainbow {
+
+@keyframes rainbow {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
@@ -104,6 +106,8 @@
     font-weight: bold;
     animation: rainbow 5s ease infinite; /* Continuous rainbow animation */
 }
+
+
 
 </style>
     <!-- Meta tags for character encoding and responsive design -->
