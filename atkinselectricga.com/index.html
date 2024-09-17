@@ -14,71 +14,65 @@
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-    }
-    .flip:hover {
-        transform: scale(1.05); /* Zooms in slightly */
-        transition: all 0.3s ease-in-out;
-    }
-    .flip:hover .frontitle {
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    transform-style: preserve-3d; /* Ensure 3D flip works */
     }
     .flip::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1; /* Ensure the overlay is behind the content */
     }
-     /* Change the text color to white */
-    .flip .frontitle, .flip .back p, .flip .back a {
-        position: relative;
-        z-index: 2;
-        color: white;
-        padding: 10px;
-    }
-    /* Reduce the font size of the front title by 50% */
-    .flip .frontitle {
-        font-size: 1.5em; /* Adjust this based on your original size */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Reduce text-shadow size if needed */
-	font-family: 'Poppins', sans-serif;
-    }
-    /* Optional: Style for the button */
-    .btn.draw-border-services {
-        border: 2px solid white;
-        padding: 10px 20px;
-        color: white;
-        text-transform: uppercase;
-        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    }
-    .btn.draw-border-services:hover {
-        background-color: white;
-        color: black;
-    }
-    .flip-container {
-    perspective: 1000px;
-}
-
-.flip {
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-}
-
-.flip-container:hover .flip {
-    transform: rotateY(180deg);
-}
-
-.flip .front, .flip .back {
+    .flip .front, .flip .back {
     position: absolute;
     width: 100%;
+    height: 100%;
     backface-visibility: hidden;
+    z-index: 2; /* Ensure content is above overlay */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flip .front {
+    background-size: cover;
+    background-position: center;
 }
 
 .flip .back {
-    transform: rotateY(180deg);
+    background-color: #333; /* Set a background color for the back side */
+    transform: rotateY(180deg); /* Rotate the back side for the flip effect */
 }
+
+.flip-container:hover .flip {
+    transform: rotateY(180deg); /* Flip the box */
+}
+
+.flip .frontitle {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn.draw-border-services {
+    border: 2px solid white;
+    padding: 10px 20px;
+    color: white;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn.draw-border-services:hover {
+    background-color: white;
+    color: black;
+}
+   
 
 </style>
     <!-- Meta tags for character encoding and responsive design -->
@@ -366,42 +360,59 @@
   </article>
 
   <!-- Our Services Section -->
-<article class="content-wrapper transparent-bg">
+            <article class="content-wrapper transparent-bg">
     <div class="row fullwidth">
         <div class="large-12 columns text-center transparent-bg">
             <h2 class="our-services">Our<br><span class="services-header">Services</span></h2>
         </div>
 
-        <!-- Services Flip Boxes -->
+        <!-- Service 1: Electrical Maintenance -->
         <div class="large-4 columns strip-padding">
-        <div class="flip" style="background-image: url('wp-content/uploads/sites/517/2018/09/Elec_Maintenance.png');">
-                <h1 class="text-shadow frontitle"><strong>Electrical Maintenance</strong></h1>
-                <div class="back">
-                <p><strong>What kind of condition is your home or business’s electric infrastructure in? Just because your is fine...</strong></p>
-                    <a href="services/index.html" class="btn draw-border-services">Learn More</a>
+            <div class="flip-container">
+                <div class="flip">
+                    <div class="front" style="background-image: url('wp-content/uploads/sites/517/2018/09/Elec_Maintenance.png');">
+                        <h1 class="frontitle">Electrical Maintenance</h1>
+                    </div>
+                    <div class="back">
+                        <p>What kind of condition is your home or business’s electric infrastructure in? Just because your is fine...</p>
+                        <a href="services/index.html" class="btn draw-border-services">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- Service 2: Low Voltage Transmission Erection -->
         <div class="large-4 columns strip-padding">
-            <div class="flip" style="background-image: url('wp-content/uploads/sites/517/2018/09/LT.jpg');">
-                <h1 class="text-shadow frontitle"><strong>Low Voltage Transmission Erection</strong></h1>
-                <div class="back">
-                    <p><strong>Erecting low transmission lines requires precision and expertise to ensure long-term stability. Our electricians handle your installation with the highest standards of safety and efficiency...</strong></p>
-                    <a href="services/index.html" class="btn draw-border-services">Learn More</a>
+            <div class="flip-container">
+                <div class="flip">
+                    <div class="front" style="background-image: url('wp-content/uploads/sites/517/2018/09/LT.jpg');">
+                        <h1 class="frontitle">Low Voltage Transmission Erection</h1>
+                    </div>
+                    <div class="back">
+                        <p>Erecting low transmission lines requires precision and expertise to ensure long-term stability. Our electricians handle your installation with the highest standards of safety and efficiency...</p>
+                        <a href="services/index.html" class="btn draw-border-services">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- Service 3: High Voltage Line Erection -->
         <div class="large-4 columns strip-padding">
-            <div class="flip" style="background-image: url('wp-content/uploads/sites/517/2018/09/HT.jpg');">
-                <h1 class="text-shadow frontitle"><strong>High Voltage Line Erection</strong></h1>
-                <div class="back">
-                    <p><strong>Erecting high voltage transmission lines requires advanced expertise and stringent safety standards to support large-scale electricity flow, ensuring efficiency and reliability...</strong></p>
-                    <a href="services/index.html" class="btn draw-border-services">Learn More</a>
+            <div class="flip-container">
+                <div class="flip">
+                    <div class="front" style="background-image: url('wp-content/uploads/sites/517/2018/09/HT.jpg');">
+                        <h1 class="frontitle">High Voltage Line Erection</h1>
+                    </div>
+                    <div class="back">
+                        <p>Erecting high voltage transmission lines requires advanced expertise and stringent safety standards to support large-scale electricity flow, ensuring efficiency and reliability...</p>
+                        <a href="services/index.html" class="btn draw-border-services">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </article>
+
 
 
 
