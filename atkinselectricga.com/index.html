@@ -84,18 +84,25 @@
 }
 
 .blue-bar h1 {
-    font-family: 'Poppins', sans-serif; /* Use Poppins for consistency */
-    font-size: 1.5em;
-    margin: 0;
-    padding: 0;
-    color: white;
+    background: linear-gradient(145deg, #333, #000); /* Dark glossy black gradient */
+    padding: 10px;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a glossy effect */
+}
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .colorful-text {
-    background: linear-gradient(45deg, red, yellow, green, blue, orange);
-    -webkit-background-clip: text;
-    color: transparent;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 300%;
+    -webkit-background-clip: text;  /* Ensures the gradient is clipped to the text */
+    -webkit-text-fill-color: transparent; /* Makes the text transparent so the gradient shows */
+    color: transparent; /* Fallback for other browsers */
     font-weight: bold;
+    animation: rainbow 5s ease infinite; /* Continuous rainbow animation */
 }
 
 </style>
