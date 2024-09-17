@@ -77,26 +77,6 @@
         position: relative;
         height: 100%;
     }
-.blue-bar {
-    background-color: #007bff; /* Blue background */
-    padding: 10px;
-    text-align: center;
-}
-
-.blue-bar h1 {
-    font-family: 'Poppins', sans-serif; /* Use Poppins for consistency */
-    font-size: 1.5em;
-    margin: 0;
-    padding: 0;
-    color: white;
-}
-
-.colorful-text {
-    background: linear-gradient(45deg, red, yellow, green, blue, orange);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-}
 
 </style>
     <!-- Meta tags for character encoding and responsive design -->
@@ -192,10 +172,7 @@
 
 </head>
 <body class="page-template-default page page-id-5">
-<div class="blue-bar">
-    <h1 class="colorful-text">Government Authorized & Certified Electrical Contractor</h1>
-</div>
-	
+
     <!-- Main body content starts here -->
 
 <header class="header-wrapper fadein-150" id="sticky-header">
@@ -262,10 +239,10 @@
         </div>
       </nav>
     </div>
-    
+
     <!-- Phone Contact Section -->
     <div class="large-3 medium-12 columns header-phone text-center fadein-900">
-	    <a class="click-to-call" href="tel:7020037939"><strong>9423418563,7385530565</strong></a>
+            <a class="click-to-call" href="tel:7020037939"><strong>9423418563,7385530565</strong></a>
       <span class="hide-for-small-only"><strong>Call us today for assistance</strong></span>
     </div>
   </div>
@@ -395,7 +372,7 @@
 
       <!-- Service 1: Electrical Maintenance -->
       <div class="large-4 columns strip-padding">
-      <div class="flip" style="background-image: url('wp-content/uploads/sites/517/2018/09/Elec_Maintenance.png');">		    <div class="back">
+      <div class="flip" style="background-image: url('wp-content/uploads/sites/517/2018/09/Elec_Maintenance.png');">             <div class="back">
               <h1 class="frontitle">Electrical Maintenance</h1>
      <p>What kind of condition is your home or business’s electric infrastructure in? Just because your is fine...</p>
               <a href="services/index.html" class="btn draw-border-services">Learn More</a>
@@ -487,3 +464,4 @@
     </footer>
 </body>
 </html>
+
