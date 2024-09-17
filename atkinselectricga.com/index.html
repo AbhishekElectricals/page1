@@ -14,8 +14,8 @@
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-    transform-style: preserve-3d; /* Ensure 3D flip works */
     }
+    /* Semi-transparent overlay */
     .flip::before {
     content: "";
     position: absolute;
@@ -23,56 +23,60 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1; /* Ensure the overlay is behind the content */
     }
-    .flip .front, .flip .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    z-index: 2; /* Ensure content is above overlay */
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+     /* Ensures the content is above the overlay */
+    .flip .frontitle, .flip .back p, .flip .back a {
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-align: center;
+    }
 
-.flip .front {
-    background-size: cover;
-    background-position: center;
-}
-
-.flip .back {
-    background-color: #333; /* Set a background color for the back side */
-    transform: rotateY(180deg); /* Rotate the back side for the flip effect */
-}
-
-.flip-container:hover .flip {
-    transform: rotateY(180deg); /* Flip the box */
-}
-
+/* Title styling */
 .flip .frontitle {
     font-size: 1.5em;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
 }
-
+/* Description text */
+    .flip .back p {
+        font-size: 1em;
+        line-height: 1.5;
+        margin: 0 auto;
+        width: 80%;
+    }
+/* Button styling */
 .btn.draw-border-services {
     border: 2px solid white;
     padding: 10px 20px;
     color: white;
     text-transform: uppercase;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .btn.draw-border-services:hover {
     background-color: white;
     color: black;
 }
-   
+   /* Centering the text content vertically */
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 2;
+    }
 
 </style>
     <!-- Meta tags for character encoding and responsive design -->
@@ -366,55 +370,38 @@
             <h2 class="our-services">Our<br><span class="services-header">Services</span></h2>
         </div>
 
-        <!-- Service 1: Electrical Maintenance -->
-        <div class="large-4 columns strip-padding">
-            <div class="flip-container">
-                <div class="flip">
-                    <div class="front" style="background-image: url('wp-content/uploads/sites/517/2018/09/Elec_Maintenance.png');">
-                        <h1 class="frontitle">Electrical Maintenance</h1>
-                    </div>
-                    <div class="back">
-                        <p>What kind of condition is your home or business’s electric infrastructure in? Just because your is fine...</p>
-                        <a href="services/index.html" class="btn draw-border-services">Learn More</a>
-                    </div>
+      <!-- Service 1: Electrical Maintenance -->
+      <div class="large-4 columns strip-padding">
+      <div class="flip" style="background-image: url('wp-content/uploads/sites/517/2018/09/Elec_Maintenance.png');">		    <div class="back">
+              <h1 class="frontitle">Electrical Maintenance</h1>
+     <p>What kind of condition is your home or business’s electric infrastructure in? Just because your is fine...</p>
+              <a href="services/index.html" class="btn draw-border-services">Learn More</a>
                 </div>
             </div>
         </div>
-
         <!-- Service 2: Low Voltage Transmission Erection -->
         <div class="large-4 columns strip-padding">
-            <div class="flip-container">
-                <div class="flip">
-                    <div class="front" style="background-image: url('wp-content/uploads/sites/517/2018/09/LT.jpg');">
-                        <h1 class="frontitle">Low Voltage Transmission Erection</h1>
-                    </div>
-                    <div class="back">
-                        <p>Erecting low transmission lines requires precision and expertise to ensure long-term stability. Our electricians handle your installation with the highest standards of safety and efficiency...</p>
-                        <a href="services/index.html" class="btn draw-border-services">Learn More</a>
-                    </div>
+            <div class="flip" style="background-image: url('wp-content/uploads/sites/517/2018/09/LT.jpg');">
+                <div class="back">
+                    <h1 class="frontitle">Low Voltage Transmission Erection</h1>
+                    <p>Erecting low transmission lines requires precision and expertise to ensure long-term stability. Our electricians handle your installation with the highest standards of safety and efficiency...</p>
+                    <a href="services/index.html" class="btn draw-border-services">Learn More</a>
                 </div>
             </div>
         </div>
 
         <!-- Service 3: High Voltage Line Erection -->
         <div class="large-4 columns strip-padding">
-            <div class="flip-container">
-                <div class="flip">
-                    <div class="front" style="background-image: url('wp-content/uploads/sites/517/2018/09/HT.jpg');">
-                        <h1 class="frontitle">High Voltage Line Erection</h1>
-                    </div>
-                    <div class="back">
-                        <p>Erecting high voltage transmission lines requires advanced expertise and stringent safety standards to support large-scale electricity flow, ensuring efficiency and reliability...</p>
-                        <a href="services/index.html" class="btn draw-border-services">Learn More</a>
-                    </div>
+            <div class="flip" style="background-image: url('wp-content/uploads/sites/517/2018/09/HT.jpg');">
+                <div class="back">
+                    <h1 class="frontitle">High Voltage Line Erection</h1>
+                    <p>Erecting high voltage transmission lines requires advanced expertise and stringent safety standards to support large-scale electricity flow, ensuring efficiency and reliability...</p>
+                    <a href="services/index.html" class="btn draw-border-services">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
 </article>
-
-
-
 
   <!-- Residential & Commercial Services Section -->
   <article class="content-wrapper">
