@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <!-- Add the Google Font link here -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
  <style>
     .flip {
     background-size: cover; /* Ensures the image covers the entire element */
@@ -9,20 +11,75 @@
     height: 300px; /* Set a specific height for your flip boxes */
     width: 100%; /* Ensures the flip boxes span the full width */
     position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    }
+    .flip:hover {
+        transform: scale(1.05); /* Zooms in slightly */
+        transition: all 0.3s ease-in-out;
+    }
+    .flip:hover .frontitle {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    }
+    .flip::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
     }
      /* Change the text color to white */
     .flip .frontitle, .flip .back p, .flip .back a {
+        position: relative;
+        z-index: 2;
         color: white;
+        padding: 10px;
     }
     /* Reduce the font size of the front title by 50% */
     .flip .frontitle {
         font-size: 1.5em; /* Adjust this based on your original size */
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Reduce text-shadow size if needed */
+	font-family: 'Poppins', sans-serif;
     }
     /* Optional: Style for the button */
     .btn.draw-border-services {
+        border: 2px solid white;
+        padding: 10px 20px;
         color: white;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    .btn.draw-border-services:hover {
+        background-color: white;
+        color: black;
+    }
+    .flip-container {
+    perspective: 1000px;
 }
+
+.flip {
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flip-container:hover .flip {
+    transform: rotateY(180deg);
+}
+
+.flip .front, .flip .back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.flip .back {
+    transform: rotateY(180deg);
+}
+
 </style>
     <!-- Meta tags for character encoding and responsive design -->
     <meta charset="UTF-8" />
