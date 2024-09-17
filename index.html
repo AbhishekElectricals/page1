@@ -1,13 +1,12 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="Welcome to Abhishek Electricals - Find information about our services and offerings." />
     <meta name="keywords" content="Abhishek Electricals, Electrical services, Electrical contractors" />
-    <title>"Abhishek Electrical's"</title>
+    <title>Abhishek Electrical's</title>
     <style type="text/css">
-
         body {
             margin: 0;
             padding: 0;
@@ -25,141 +24,34 @@
             font-weight: bold;
         }
 
-        #siteNavigation a, #siteNavigation .current {
-            font-weight: bold;
-            color: #448;
-        }
-
-        #siteNavigation a:link {
-            text-decoration: none;
-        }
-
-        #siteNavigation a:visited {
-            text-decoration: none;
-        }
-
-        #siteNavigation .current {
-            background-color: #ccd;
-        }
-
-        #siteNavigation a:hover {
-            text-decoration: none;
-            background-color: #fff;
-            color: #000;
-        }
-
-        #siteNavigation a:active {
-            text-decoration: none;
-            background-color: #ccc;
-        }
-
-        a:link {
-            text-decoration: underline;
-            color: #00f;
-        }
-
-        a:visited {
-            text-decoration: underline;
-            color: #000;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: #c00;
-        }
-
-        a:active {
-            text-decoration: underline;
-        }
-
-        #pageContent {
-            clear: both;
-            border-bottom: 6px solid #000;
-            padding: 10px;
-            padding-top: 20px;
-            line-height: 1.65em;
-            background-image: url(backblue.gif);
-            background-repeat: no-repeat;
-            background-position: top right;
-            background-color: #ccd;
-        }
-
-        .imgLeft {
-            float: left;
-            margin-right: 10px;
-            margin-bottom: 10px;
-        }
-
-        .imgRight {
-            float: right;
-            margin-left: 10px;
-            margin-bottom: 10px;
-        }
-
-        hr {
-            height: 1px;
-            color: #000;
-            background-color: #000;
-            margin-bottom: 15px;
-        }
-
-        h1 {
-            margin: 0;
-            font-weight: bold;
-            font-size: 2em;
-        }
-
-        h2 {
-            margin: 0;
-            font-weight: bold;
-            font-size: 1.6em;
-        }
-
-        h3 {
-            margin: 0;
-            font-weight: bold;
-            font-size: 1.3em;
-        }
-
-        h4 {
-            margin: 0;
-            font-weight: bold;
-            font-size: 1.18em;
-        }
-
-        .blak {
-            background-color: #000;
-        }
-
-        .hide {
-            display: none;
-        }
-
-        .tableWidth {
-            min-width: 400px;
-        }
-
-        .tblRegular {
-            border-collapse: collapse;
-        }
-
-        .tblRegular td {
-            padding: 6px;
-            background-image: url(fade.gif);
-            border: 2px solid #99c;
-        }
-
-        .tblHeaderColor, .tblHeaderColor td {
-            background: #99c;
-        }
-
-        .tblNoBorder td {
-            border: 0;
+        .verify-button {
+            padding: 10px 20px;
+            background-color: #448;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
         }
     </style>
+
+    <script>
+        // Function to verify and redirect
+        function verifyHuman() {
+            localStorage.setItem('verified', 'true');
+            alert("Verification successful! Redirecting to homepage...");
+            window.location.href = "atkinselectricga.com/index.html"; // Redirects to homepage (change the URL as needed)
+        }
+
+        // Function to check if the user is already verified
+        function checkVerification() {
+            if (localStorage.getItem('verified') === 'true') {
+                window.location.href = "atkinselectricga.com/index.html"; // Redirect if already verified
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body onload="checkVerification()">
     <table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
         <tr>
             <td id="subTitle">Your Trusted Partner in Electrical Solutions</td>
@@ -175,20 +67,30 @@
                             <table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
                                 <tr>
                                     <td id="pageContent">
-                                         <h1 align="center">"Electrical Excellence That Sparks Satisfaction":</h1>
+                                        <h1 align="center">"Electrical Excellence That Sparks Satisfaction"</h1>
                                         <table border="0" width="100%" cellspacing="1" cellpadding="0">
                                             <tr>
                                                 <td background="fade.gif">
                                                     &middot;
                                                     <a href="atkinselectricga.com/index.html">
-                                                       Welcome | Abhishek Electricals Inc.
+                                                        Welcome | Abhishek Electricals Inc.
                                                     </a>
                                                 </td>
                                             </tr>
                                         </table>
                                         <br><br><br>
+
+                                        <!-- Human Verification Button -->
+                                        <h3 align="center">Please verify you are not a robot:</h3>
+                                        <div align="center">
+                                            <button onclick="verifyHuman()" class="verify-button">
+                                                Click here to verify
+                                            </button>
+                                        </div>
+
+                                        <br><br><br>
                                         <h6 align="right">
-                                        <i>&copy; 2021 Gov. Electrical Contractor - Web Design: Abhishek Pise.</i>
+                                            <i>&copy; 2021 Gov. Electrical Contractor - Web Design: Abhishek Pise.</i>
                                         </h6>
                                     </td>
                                 </tr>
@@ -196,7 +98,7 @@
                         </td>
                     </tr>
                 </table>
-	    </td>
+            </td>
         </tr>
     </table>
 </body>
