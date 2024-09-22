@@ -86,16 +86,128 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     [/contentinnerwrapper]
  
   [/contentwrapper]-->
+  <div class="blue-bar">
+    <span class="lightning-icon">⚡</span>
+    <h1 class="colorful-text">Government Authorized & Certified Electrical Contractor</h1>
+    <span class="lightning-icon">⚡</span>
+</div>
+
+<script>
+    let last_known_scroll_position = 0;
+    let ticking = false;
+
+    function doSomething(scroll_pos) {
+        const textElement = document.querySelector('.colorful-text');
+        const triggerHeight = textElement.offsetTop - window.innerHeight + 100; // Adjust this value
+
+        if (scroll_pos > triggerHeight) {
+            textElement.classList.add('fade-in');
+        } else {
+            textElement.classList.remove('fade-in');
+        }
+    }
+
+    window.addEventListener('scroll', function() {
+        last_known_scroll_position = window.scrollY;
+
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                doSomething(last_known_scroll_position);
+                ticking = false;
+            });
+
+            ticking = true;
+        }
+    });
+</script>
+
+<style>
+/* Blue Bar */
+.blue-bar {
+    background-color: #ff0000;
+    padding: 15px; /* Reduced padding for a smaller bar */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Text Styling */
+.blue-bar h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em; /* Slightly reduced font size */
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Colorful Text with Neon Effect */
+.colorful-text {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff; /* Default text color */
+    opacity: 1; /* Start visible */
+    transition: opacity 0.5s ease; /* Smooth fade-in */
+    font-size: 1.5em; /* Adjust size as needed */
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff; /* Neon glow */
+}
+
+/* Fade-in class */
+.fade-in {
+    opacity: 1; /* Fade in */
+}
+
+/* Lightning Icon Styling */
+.lightning-icon {
+    font-size: 2em; /* Adjust icon size */
+    color: #ff0000; /* Neon red color */
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 10px #ff0000,
+        0 0 15px #ff0000,
+        0 0 20px #ff0000; /* Neon glow effect */
+    margin: 0 10px; /* Space around icon */
+    animation: lightning 1s infinite alternate, pulse 1s infinite alternate; /* Maintain existing animations */
+}
+
+/* Lightning Animation */
+@keyframes lightning {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+</style>
   <div class="header-inner-wrapper fadein-800">
     <div class="large-3 medium-12 columns text-center">
         <div class="logo-wrapper text-center">
-          <img src="../../wp-content/uploads/sites/517/2018/09/company-logo-web.png" alt="Atkins Electric, LLC Logo" title="Atkins Electric, LLC Logo">
+          <img src="../../wp-content/uploads/sites/517/2018/09/AElogo.png" alt="Abhishek Electricals Logo" title="Abhishek Electricals Logo">
          </div>
      </div>
      <div class="large-3 medium-12 columns text-center widgetheader">
         <div class="hours-wrapper ">
-        <p class="openingheader">The Best Electricans</p>
-       <p class="opening">Serving Cedartown & Surrounding areas</p>
+        <p class="openingheader">The Best Electrical Contractor</p>
+       <p class="opening">Serving Chandrapur, Nagpur & Surrounding areas</p>
          </div>
      </div>
      <div class="large-3 medium-12 columns text-center widgetheader">
@@ -107,7 +219,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
      <div class="large-3 medium-12 columns text-center widgetheader">
         <div class="hours-wrapper button-wrap">
       <a href="../../contact-us/index.html"><button class="btn draw-border smaller">Contact Us</button></a>
-            <a class="gmaps" href="https://www.google.com/maps/place/Atkins+Electric/@33.9964922,-85.6427395,9z/data=!3m1!4b1!4m5!3m4!1s0x0:0x20074524023386c8!8m2!3d33.9977629!4d-85.08229?hl=en" target="_blank"><i class="fa fa-map-marker gmapsize"></i></a>
+            <a class="gmaps" href="https://www.google.com/maps/place/Abhishek+Electrical's/@20.1151193,79.113299,15z/data=!3m1!4b1!4m6!3m5!1s0x3bd32529559432bd:0x33157f7e23c6d78f!8m2!3d20.1151196!4d79.1235773!16s%2Fg%2F11lp86v5zj?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa fa-map-marker gmapsize"></i></a>
          </div>
 
      </div>
@@ -151,7 +263,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </div></nav>
      </div>
     <div class="large-3 medium-12 columns header-phone text-center right fadein-900">
-      <a class="click-to-call" href="tel:+17065061178">(706) 506-1178 </a>
+      <a class="click-to-call" href="7385530565">9423418563 </a>
       <span class="hide-for-small-only">Call us today for assistance</span>
      </div>
    </div>
@@ -164,7 +276,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
       <div class="large-12 columns strip-padding from-bottom">
         <div class="large-12 columns fadein-700">
             <h1 class="page-title"><span>Trusted and Professional Electricians</span></h1>
-            <p class="call-tagline">Call us at <a class="click-to-call" href="tel:+17065061178">(706) 506-1178 </a></p>
+            <p class="call-tagline">Call us at <a class="click-to-call" href="7385530565">9423418563 </a></p>
          </div>
         <div class="large-12 columns scroll-icon-wrapper">
            <div class="large-6 columns fadein-600 scroll-content">
@@ -185,14 +297,14 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         <div class="large-6 columns">
           <p>If something goes wrong with your DIY electrical project, there is a high probability of injury or damage to your property. And you can bet that your insurance company won’t be too keen to pick up the bill when they find out the damage to your building and to yourself was completely self-inflicted and avoidable. So, if you like the price tag of doing it yourself, factor in hospital bills, the cost of fire restoration services and more before you go through with it.</p>
           <p>Furthermore, an unlicensed electrician doesn’t have a license for a reason. Getting your electrical license is more than memorizing facts and passing an exam. It holds the electrician responsible and liable to penalties in the event of illegal, immoral or incompetent actions. Those who fail to obtain a license are denied for a good reason. Do you really want them working on your home or business?</p>
-          <p>If you want to have confidence an electrical project once it’s completed, you need to hire Atkins Electric, LLC’s electricians. We are a full-service electrical contractor company that has been providing residential and commercial clients with expert, reliable electrical services for many years.</p>
+          <p>If you want to have confidence an electrical project once it’s completed, you need to hire Abhishek Electrical’s electricians. We are a full-service electrical contractor company that has been providing residential and commercial clients with expert, reliable electrical services for many years.</p>
           <p>We specialize in all types of electrical work. Just give us a call today, tell us what you need and one of our fully licensed and insured electricians will provide you with a free estimate.</p>
          </div>
        </div>
       <div class="large-12 columns fadein-600 strip-padding">
         <div class="large-12 columns scrollfade">
           <h2>Residential and Commercial Electricians</h2>
-          <p>One of the things that sets Atkins Electric, LLC apart from other electrical companies in the area is that we are equally comfortable working in residential and commercial settings. There is no job too big or too small for our expertise. After all, we would rather provide you with affordable, professional electrical services than see disaster strike your home or business.</p>
+          <p>One of the things that sets Abhishek Electricals apart from other electrical companies in the area is that we are equally comfortable working in residential and commercial settings. There is no job too big or too small for our expertise. After all, we would rather provide you with affordable, professional electrical services than see disaster strike your home or business.</p>
          </div>
        </div>
      </div>
@@ -200,7 +312,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
       <div class="row">
         <div class="large-7 columns large-centered text-center">
           <h2 class="scrollfade from-top">Contact Us today!</h2>
-          <p>For all your electrical needs, get in touch with Atkins Electric, LLC today</p>
+          <p>For all your electrical needs, get in touch with Abhishek Electricals today</p>
           <a href="../../contact-us/index.html"><button class="btn draw-border">Contact Us Today</button></a>
          </div>
        </div>
@@ -210,7 +322,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <footer class="footer-wrapper">
   <div class="row">
     <div class="large-9 columns">
-      <p>All information provided is provided for information purposes only and does not constitute a legal contract between Atkins Electric, LLC and any person or entity unless otherwise specified. Information is subject to change without prior notice. Although every reasonable effort is made to present current and accurate information, LinkNow™ Media makes no guarantees of any kind.</p>
+      <p>All information provided is provided for information purposes only and does not constitute a legal contract between Abhishek Electricals and any person or entity unless otherwise specified. Information is subject to change without prior notice. Although every reasonable effort is made to present current and accurate information, LinkNow™ Media makes no guarantees of any kind.</p>
      </div>
     <div class="large-3 columns large-text-right">
       <a class="lnm-image" rel="nofollow" href="http://linknow.com/" title="Website Hosted By LinkNow&trade Media"><img src="../../../www.linknow.com/linknow_images/linknow-logo-white.png" alt="Website Hosted By LinkNow&trade Media" /></a>
