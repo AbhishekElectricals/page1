@@ -109,6 +109,118 @@
     [/contentinnerwrapper]
 
   [/contentwrapper]-->
+  <div class="blue-bar">
+    <span class="lightning-icon">⚡</span>
+    <h1 class="colorful-text">Government Authorized & Certified Electrical Contractor</h1>
+    <span class="lightning-icon">⚡</span>
+</div>
+
+<script>
+    let last_known_scroll_position = 0;
+    let ticking = false;
+
+    function doSomething(scroll_pos) {
+        const textElement = document.querySelector('.colorful-text');
+        const triggerHeight = textElement.offsetTop - window.innerHeight + 100; // Adjust this value
+
+        if (scroll_pos > triggerHeight) {
+            textElement.classList.add('fade-in');
+        } else {
+            textElement.classList.remove('fade-in');
+        }
+    }
+
+    window.addEventListener('scroll', function() {
+        last_known_scroll_position = window.scrollY;
+
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                doSomething(last_known_scroll_position);
+                ticking = false;
+            });
+
+            ticking = true;
+        }
+    });
+</script>
+
+<style>
+/* Blue Bar */
+.blue-bar {
+    background-color: #ff0000;
+    padding: 15px; /* Reduced padding for a smaller bar */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Text Styling */
+.blue-bar h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em; /* Slightly reduced font size */
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Colorful Text with Neon Effect */
+.colorful-text {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff; /* Default text color */
+    opacity: 1; /* Start visible */
+    transition: opacity 0.5s ease; /* Smooth fade-in */
+    font-size: 1.5em; /* Adjust size as needed */
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff; /* Neon glow */
+}
+
+/* Fade-in class */
+.fade-in {
+    opacity: 1; /* Fade in */
+}
+
+/* Lightning Icon Styling */
+.lightning-icon {
+    font-size: 2em; /* Adjust icon size */
+    color: #ff0000; /* Neon red color */
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 10px #ff0000,
+        0 0 15px #ff0000,
+        0 0 20px #ff0000; /* Neon glow effect */
+    margin: 0 10px; /* Space around icon */
+    animation: lightning 1s infinite alternate, pulse 1s infinite alternate; /* Maintain existing animations */
+}
+
+/* Lightning Animation */
+@keyframes lightning {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+</style>
   <div class="header-inner-wrapper fadein-800">
     <div class="large-3 medium-12 columns text-center">
         <div class="logo-wrapper text-center">
