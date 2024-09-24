@@ -220,6 +220,25 @@
         transform: scale(1);
     }
 }
+.innerservices {
+    display: none;
+}
+#electrical-contractor .innerservices {
+    display: inline-block; /* Show only the 'Learn More' button for Electrical Contractor */
+}
+#electrical-inspections .innerservices {
+    display: inline-block; /* Show only the 'Learn More' button for Electrical Inspection */
+}
+#electrician .innerservices {
+    display: inline-block; /* Show only the 'Learn More' button for electrician */
+}
+/* Disable links for non-redirect items */
+.disabled a {
+    pointer-events: none; /* Disables click events */
+    color: gray; /* Optional: change color to indicate it's not clickable */
+    text-decoration: none; /* Remove underline to make it clear it's disabled */
+}
+
 </style>
   <div class="header-inner-wrapper fadein-800">
     <div class="large-3 medium-12 columns text-center">
@@ -262,21 +281,21 @@
 <ul class='dropdown'>
         <li class="page_item page-item-8"><a href="electrical-contractor/index.html">Electrical Contractor</a></li>
         <li class="page_item page-item-9"><a href="electrical-inspections/index.html">Electrical Inspections</a></li>
-        <li class="page_item page-item-12"><a href="landscape-lighting/index.html">Landscape Lighting</a></li>
-        <li class="page_item page-item-13"><a href="lighting-installation/index.html">Lighting Installation</a></li>
-        <li class="page_item page-item-14"><a href="new-construction-electrical/index.html">New Construction Electrical</a></li>
-        <li class="page_item page-item-15"><a href="appliance-installation/index.html">Appliance Installation</a></li>
-        <li class="page_item page-item-17"><a href="electrical-repair/index.html">Electrical Repair</a></li>
-        <li class="page_item page-item-18"><a href="electrical-retrofitting/index.html">Electrical Retrofitting</a></li>
+        <li class="page_item page-item-12 disabled"><a href="landscape-lighting/index.html">Landscape Lighting</a></li>
+        <li class="page_item page-item-13 disabled"><a href="lighting-installation/index.html">Lighting Installation</a></li>
+        <li class="page_item page-item-14 disabled"><a href="new-construction-electrical/index.html">New Construction Electrical</a></li>
+        <li class="page_item page-item-15 disabled"><a href="appliance-installation/index.html">Appliance Installation</a></li>
+        <li class="page_item page-item-17 disabled"><a href="electrical-repair/index.html">Electrical Repair</a></li>
+        <li class="page_item page-item-18 disabled"><a href="electrical-retrofitting/index.html">Electrical Retrofitting</a></li>
         <li class="page_item page-item-19"><a href="electrician/index.html">Electrician</a></li>
-        <li class="page_item page-item-20"><a href="emergency-electrician/index.html">Emergency Electrician</a></li>
-        <li class="page_item page-item-21"><a href="lighting-electrician/index.html">Lighting Electrician</a></li>
-        <li class="page_item page-item-22"><a href="rewiring-service/index.html">Rewiring Service</a></li>
-        <li class="page_item page-item-23"><a href="standby-generators/index.html">Standby Generators</a></li>
-        <li class="page_item page-item-24"><a href="surge-protection/index.html">Surge Protection</a></li>
-        <li class="page_item page-item-27"><a href="security-lighting/index.html">Security Lighting</a></li>
-        <li class="page_item page-item-29"><a href="ceiling-fan-installation/index.html">Ceiling Fan Installation</a></li>
-	<li class="page_item page-item-31"><a href="hot-tub-and-sauna-electrical-services/index.html">Hot Tub and Sauna Electrical Services</a></li>
+        <li class="page_item page-item-20 disabled"><a href="emergency-electrician/index.html">Emergency Electrician</a></li>
+        <li class="page_item page-item-21 disabled"><a href="lighting-electrician/index.html">Lighting Electrician</a></li>
+        <li class="page_item page-item-22 disabled"><a href="rewiring-service/index.html">Rewiring Service</a></li>
+        <li class="page_item page-item-23 disabled"><a href="standby-generators/index.html">Standby Generators</a></li>
+        <li class="page_item page-item-24 disabled"><a href="surge-protection/index.html">Surge Protection</a></li>
+        <li class="page_item page-item-27 disabled"><a href="security-lighting/index.html">Security Lighting</a></li>
+        <li class="page_item page-item-29 disabled"><a href="ceiling-fan-installation/index.html">Ceiling Fan Installation</a></li>
+	<li class="page_item page-item-31 disabled"><a href="hot-tub-and-sauna-electrical-services/index.html">Hot Tub and Sauna Electrical Services</a></li>
 </ul>
 </li>
 <li class="page_item page-item-34"><a href="../faq/index.html">FAQ</a></li>
@@ -315,12 +334,12 @@
      </div>
     <div class="row services-wrapper fadein-700 vertical-padding-small">
       <div class="large-12 columns strip-padding">
-        <article class="large-6 columns service">
+        <article class="large-6 columns service" id="electrical-contractor">
           <h2>Electrical Contractor</h2>
           <p>Whether you are building a brand-new home or commercial space or remodeling an existing one, you are going need to get a professional, licensed and insured electrical contractor.</p>
           <a href="../electrical-contractor/index.html" class="btn draw-border innerservices">Learn More</a>
          </article>
-        <article class="large-6 columns service">
+        <article class="large-6 columns service" id="electrical-inspections">
           <h2>Electrical Inspections</h2>
           <p>What kind of condition is your home or business’s electric infrastructure in? Just because your lights are on and your electronic devices receive power when they are plugged in doesn’t necessarily mean that everything is fine.</p>
           <a href="../electrical-inspections/index.html" class="btn draw-border innerservices">Learn More</a>
@@ -369,7 +388,7 @@
           <p>Have you started to notice that your electricity utility bills have been steadily rising even though you haven’t changed anything about your usage in your home or local business? </p>
           <a href="../electrical-retrofitting/index.html" class="btn draw-border innerservices">Learn More</a>
          </article>
-        <article class="large-6 columns service">
+        <article class="large-6 columns service" id="electrician">
           <h2>Electrician</h2>
           <p>When you need electrical work done on your residential or commercial property, the only person who should touch it is a licensed electrician. Of course, we understand that there are plenty temptations to pursue alternatives.</p>
           <a href="../electrician/index.html" class="btn draw-border innerservices">Learn More</a>
