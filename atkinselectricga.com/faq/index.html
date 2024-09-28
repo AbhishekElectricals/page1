@@ -197,6 +197,24 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         transform: scale(1);
     }
 }
+/* Disable links for non-redirect items */
+.disabled {
+    pointer-events: none; /* Disables click events */
+    color: gray; /* Optional: change color to indicate it's not clickable */
+    text-decoration: none; /* Remove underline to make it clear it's disabled */
+    cursor: not-allowed;
+}
+.glowing-green a {
+    color: green;
+    text-shadow: 0 0 10px green, 0 0 20px green, 0 0 30px green;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.glowing-green a:hover {
+    color: white; /* Change text color on hover if desired */
+    text-shadow: 0 0 20px red, 0 0 30px green, 0 0 40px green;
+}
+
 </style>
   <div class="header-inner-wrapper fadein-800">
     <div class="large-3 medium-12 columns text-center">
@@ -237,23 +255,23 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <li class="page_item page-item-6"><a href="../about-us/index.html">About</a></li>
 <li class="page_item page-item-7 page_item_has_children has-dropdown not-click"><a href="../services/index.html">Services</a>
 <ul class='dropdown'>
-	<li class="page_item page-item-8"><a href="../services/electrical-contractor/index.html">Electrical Contractor</a></li>
-	<li class="page_item page-item-9"><a href="../services/electrical-inspections/index.html">Electrical Inspections</a></li>
-	<li class="page_item page-item-12"><a href="../services/landscape-lighting/index.html">Landscape Lighting</a></li>
-	<li class="page_item page-item-13"><a href="../services/lighting-installation/index.html">Lighting Installation</a></li>
-	<li class="page_item page-item-14"><a href="../services/new-construction-electrical/index.html">New Construction Electrical</a></li>
-	<li class="page_item page-item-15"><a href="../services/appliance-installation/index.html">Appliance Installation</a></li>
-	<li class="page_item page-item-17"><a href="../services/electrical-repair/index.html">Electrical Repair</a></li>
-	<li class="page_item page-item-18"><a href="../services/electrical-retrofitting/index.html">Electrical Retrofitting</a></li>
-	<li class="page_item page-item-19"><a href="../services/electrician/index.html">Electrician</a></li>
-	<li class="page_item page-item-20"><a href="../services/emergency-electrician/index.html">Emergency Electrician</a></li>
-	<li class="page_item page-item-21"><a href="../services/lighting-electrician/index.html">Lighting Electrician</a></li>
-	<li class="page_item page-item-22"><a href="../services/rewiring-service/index.html">Rewiring Service</a></li>
-	<li class="page_item page-item-23"><a href="../services/standby-generators/index.html">Standby Generators</a></li>
-	<li class="page_item page-item-24"><a href="../services/surge-protection/index.html">Surge Protection</a></li>
-	<li class="page_item page-item-27"><a href="../services/security-lighting/index.html">Security Lighting</a></li>
-	<li class="page_item page-item-29"><a href="../services/ceiling-fan-installation/index.html">Ceiling Fan Installation</a></li>
-	<li class="page_item page-item-31"><a href="../services/hot-tub-and-sauna-electrical-services/index.html">Hot Tub and Sauna Electrical Services</a></li>
+	<li class="page_item page-item-8 glowing-green"><a href="../services/electrical-contractor/index.html">Electrical Contractor</a></li>
+	<li class="page_item page-item-9 glowing-green"><a href="../services/electrical-inspections/index.html">Electrical Inspections</a></li>
+	<li class="page_item page-item-12 disabled"><a href="../services/landscape-lighting/index.html">Landscape Lighting</a></li>
+	<li class="page_item page-item-13 disabled"><a href="../services/lighting-installation/index.html">Lighting Installation</a></li>
+	<li class="page_item page-item-14 disabled"><a href="../services/new-construction-electrical/index.html">New Construction Electrical</a></li>
+	<li class="page_item page-item-15 disabled"><a href="../services/appliance-installation/index.html">Appliance Installation</a></li>
+	<li class="page_item page-item-17 disabled"><a href="../services/electrical-repair/index.html">Electrical Repair</a></li>
+	<li class="page_item page-item-18 disabled"><a href="../services/electrical-retrofitting/index.html">Electrical Retrofitting</a></li>
+	<li class="page_item page-item-19 glowing-green"><a href="../services/electrician/index.html">Electrician</a></li>
+	<li class="page_item page-item-20 disabled"><a href="../services/emergency-electrician/index.html">Emergency Electrician</a></li>
+	<li class="page_item page-item-21 disabled"><a href="../services/lighting-electrician/index.html">Lighting Electrician</a></li>
+	<li class="page_item page-item-22 disabled"><a href="../services/rewiring-service/index.html">Rewiring Service</a></li>
+	<li class="page_item page-item-23 disabled"><a href="../services/standby-generators/index.html">Standby Generators</a></li>
+	<li class="page_item page-item-24 disabled"><a href="../services/surge-protection/index.html">Surge Protection</a></li>
+	<li class="page_item page-item-27 disabled"><a href="../services/security-lighting/index.html">Security Lighting</a></li>
+	<li class="page_item page-item-29 disabled"><a href="../services/ceiling-fan-installation/index.html">Ceiling Fan Installation</a></li>
+	<li class="page_item page-item-31 disabled"><a href="../services/hot-tub-and-sauna-electrical-services/index.html">Hot Tub and Sauna Electrical Services</a></li>
 </ul>
 </li>
 <li class="page_item page-item-34 current_page_item active"><a href="index.html" aria-current="page">FAQ</a></li>
