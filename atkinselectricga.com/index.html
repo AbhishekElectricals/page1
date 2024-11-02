@@ -454,6 +454,136 @@ jQuery(document).ready(function() {
       <!--[contentinnerwrapper class="large-7 columns text-right scrollfade from-right right"]
         <img src="https://atkinselectricga.com/wp-content/themes/rele7/images/home-img-3.jpg" alt="Meter image" class="parallax-element radius-alt box-shadow">
       [/contentinnerwrapper]-->
+
+
+<article class="content-wrapper transparent-bg">
+    <div class="row fullwidth">
+        <div class="large-12 columns text-center transparent-bg">
+            <h2 class="our-methodology" style="font-size: 3em; margin-bottom: 40px; margin-top: -55px;">
+                <span style="color: black;">OUR</span><br>
+                <span class="methodology-header" style="color: red; margin-top: 25px; display: inline-block;">METHODOLOGY</span>
+            </h2>
+        </div>
+
+        <!-- Slider Wrapper -->
+        <div class="slider-wrapper">
+            <!-- Left-side Dots -->
+            <div class="dot-wrapper">
+                <div class="dot" data-index="0"></div>
+                <div class="dot" data-index="1"></div>
+                <div class="dot" data-index="2"></div>
+                <div class="dot" data-index="3"></div>
+            </div>
+
+            <!-- Tractor Images -->
+            <div class="image-wrapper portrait" style="background-image: url('Tractor/Tractor1.png');"></div>
+<div class="image-wrapper landscape" style="background-image: url('Tractor/Tractor2.png');"></div>
+<div class="image-wrapper landscape" style="background-image: url('Tractor/Tractor3.png');"></div>
+<div class="image-wrapper portrait" style="background-image: url('Tractor/Tractor4.png');"></div>
+    </div>
+</article>
+
+<style>
+    .slider-wrapper {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .image-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0; /* Start images as transparent */
+    transition: opacity 1s ease-in-out; /* Smooth fade effect */
+    }
+
+    .image-wrapper.active {
+    opacity: 1; /* Fully visible when active */
+    z-index: 1; /* Ensure active image stays on top */
+    }
+
+    .dot-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 10; /* Ensure dots are on top of images */
+    }
+
+    .dot {
+        width: 20px;
+        height: 20px;
+        background-color: lightgray;
+        cursor: pointer;
+        border-radius: 3px; /* Rounded corners for squares */
+    }
+
+    .dot.active {
+        background-color: red;
+    }
+</style>
+<script>
+$(document).ready(function() {
+    let currentIndex = 0;
+    const images = $('.slider-wrapper .image-wrapper');
+    const dots = $('.dot');
+    const totalImages = images.length;
+    let autoSlideInterval;
+    let isPaused = false;
+
+    // Show a specific image by index
+    function showImage(index) {
+        images.removeClass('active').eq(index).addClass('active');
+        dots.removeClass('active').eq(index).addClass('active');
+    }
+
+    // Show the next image and cycle
+    function showNextImage() {
+        if (!isPaused) {
+            currentIndex = (currentIndex + 1) % totalImages;
+            showImage(currentIndex);
+        }
+    }
+
+    // Start automatic sliding
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(showNextImage, 6000); // Updated to 6 seconds
+    }
+
+    // Stop automatic sliding
+    function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+    }
+
+    // On clicking a dot, show the respective image and pause for 10 seconds
+    dots.on('click', function() {
+        currentIndex = $(this).data('index');
+        showImage(currentIndex);
+        isPaused = true;
+        stopAutoSlide();
+        setTimeout(() => {
+            isPaused = false;
+            startAutoSlide();
+        }, 10000); // Pause for 10 seconds
+    });
+
+    // Initialize slider
+    showImage(currentIndex);
+    startAutoSlide();
+});
+</script>
+
+
       <div class="large-12 columns padded-small scrollfade from-bottom text-center res-com">
         <h2><span class="resident">Residential </span> and <span class="resident">Commercial <br></span>Electrical Services</h2>
        <p>Whenever there is an electrical issue in your home, we have the expertise to handle. It doesn’t matter if the job is big or small, you can always expect quality workmanship and exceptional professionalism from Abhishek Electriacals residential electricians. There are obvious inconveniences that come with unreliable electricity, but there are bigger concerns than spoiled food or not being able to check your inbox. When your home or business’s wiring, or even just a small feature of it, hasn’t been connected by a trained professional, you have to be prepared for the possibility of an electrical fire.</p>
@@ -462,7 +592,7 @@ jQuery(document).ready(function() {
        </div>
      </div>
      <div class="row vertical-padding-large text-center">
-        <h2>Testimonials</h2>
+        <h2 style="margin-top: -140px;">Testimonials</h2>
         <div class="large-4 medium-4 columns">
         <i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>
