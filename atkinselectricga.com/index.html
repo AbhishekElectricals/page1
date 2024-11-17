@@ -584,6 +584,158 @@ $(document).ready(function() {
 </script>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Electricals</title>
+    <style>
+        /* Fullscreen responsive video container */
+        .video-container {
+            position: relative;
+            width: 100vw; /* Full width of the viewport */
+            height: 100vh; /* Full height of the viewport */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000; /* Fallback background color */
+            overflow: hidden; /* Prevents overflow from video resizing */
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Ensures it scales properly */
+            z-index: 1; /* Ensures video stays on top */
+        }
+
+        /* Controls container */
+        .controls-container {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 30px; /* Increased spacing between buttons */
+            z-index: 2;
+        }
+
+        .control-button {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border: none;
+            padding: 20px 30px; /* Increased button size */
+            border-radius: 6px; /* Increased border radius */
+            font-size: 24px; /* Larger font size */
+            cursor: pointer;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .control-button:hover {
+            background: #ff4d4d;
+            transform: scale(1.1);
+        }
+
+        /* More options dropdown styling */
+        .more-options {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 6px;
+            display: none;
+            flex-direction: column;
+        }
+
+        .more-options button {
+            background: #222;
+            color: #fff;
+            border: none;
+            padding: 12px 18px; /* Increased padding */
+            border-radius: 6px;
+            margin: 8px 0; /* Increased margin */
+            cursor: pointer;
+        }
+
+        .more-options button:hover {
+            background: #ff4d4d;
+        }
+
+        .more-options-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 24px; /* Larger font size for options button */
+        }
+
+        /* Show more options */
+        .show-more-options .more-options {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Container -->
+    <h1 style="text-align: center;">Don’t be a robot, build the robot</h1>
+    <div class="video-container">
+        <video id="videoPlayer" controls autoplay muted loop>
+            <!-- Update the video source path -->
+            <source src="Tractor/Tractor_Drill.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Controls container -->
+        <div class="controls-container">
+            <!-- No Play/Pause button as requested -->
+        </div>
+
+        <!-- More options button and dropdown -->
+        <div class="more-options-button" id="moreOptionsButton">⋮</div>
+        <div class="more-options" id="moreOptions">
+            <!-- Add other options here -->
+            <button id="option1">New Option 1</button>
+            <button id="option2">New Option 2</button>
+        </div>
+    </div>
+
+    <script>
+        // Get elements
+        const moreOptionsButton = document.getElementById('moreOptionsButton');
+        const moreOptions = document.getElementById('moreOptions');
+        const option1Button = document.getElementById('option1');
+        const option2Button = document.getElementById('option2');
+
+        // More options toggle functionality
+        moreOptionsButton.addEventListener('click', () => {
+            moreOptions.classList.toggle('show-more-options');
+        });
+
+        // Option 1 functionality
+        option1Button.addEventListener('click', () => {
+            alert('Option 1 clicked!');
+        });
+
+        // Option 2 functionality
+        option2Button.addEventListener('click', () => {
+            alert('Option 2 clicked!');
+        });
+    </script>
+</body>
+</html>
+
+
+
       <div class="large-12 columns padded-small scrollfade from-bottom text-center res-com">
         <h2><span class="resident">Residential </span> and <span class="resident">Commercial <br></span>Electrical Services</h2>
        <p>Whenever there is an electrical issue in your home, we have the expertise to handle. It doesn’t matter if the job is big or small, you can always expect quality workmanship and exceptional professionalism from Abhishek Electriacals residential electricians. There are obvious inconveniences that come with unreliable electricity, but there are bigger concerns than spoiled food or not being able to check your inbox. When your home or business’s wiring, or even just a small feature of it, hasn’t been connected by a trained professional, you have to be prepared for the possibility of an electrical fire.</p>
