@@ -686,12 +686,26 @@ $(document).ready(function() {
             display: flex;
         }
     </style>
-</head>
+    </head>
 <body>
     <!-- Video Container -->
-    <h1 style="text-align: center;">Don’t be a robot, build the robot</h1>
-    <div class="video-container">
-        <video id="videoPlayer" controls autoplay muted loop>
+    <h1 style="text-align: center;">Don’t be a robot, build the robot</h1>
+
+    <div class="video-container" style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    ">
+        <video id="videoPlayer" controls autoplay muted loop style="
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+            object-fit: cover;
+            display: block;
+        ">
             <!-- Update the video source path -->
             <source src="Tractor/Tractor_Drill.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -703,38 +717,41 @@ $(document).ready(function() {
         </div>
 
         <!-- More options button and dropdown -->
-        <div class="more-options-button" id="moreOptionsButton">⋮</div>
-        <div class="more-options" id="moreOptions">
-            <!-- Add other options here -->
+        <div class="more-options-button" id="moreOptionsButton"
+            style="position: absolute; top: 10px; right: 15px; cursor: pointer; font-size: 22px;">
+            ⋮
+        </div>
+        <div class="more-options" id="moreOptions" style="
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 15px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 8px;">
             <button id="option1">New Option 1</button>
             <button id="option2">New Option 2</button>
         </div>
     </div>
 
     <script>
-    // Get elements
         const moreOptionsButton = document.getElementById('moreOptionsButton');
         const moreOptions = document.getElementById('moreOptions');
         const option1Button = document.getElementById('option1');
         const option2Button = document.getElementById('option2');
 
-        // More options toggle functionality
         moreOptionsButton.addEventListener('click', () => {
             moreOptions.classList.toggle('show-more-options');
+            moreOptions.style.display = moreOptions.classList.contains('show-more-options') ? 'block' : 'none';
         });
 
-        // Option 1 functionality
-        option1Button.addEventListener('click', () => {
-            alert('Option 1 clicked!');
-        });
-
-        // Option 2 functionality
-        option2Button.addEventListener('click', () => {
-            alert('Option 2 clicked!');
-        });
+        option1Button.addEventListener('click', () => alert('Option 1 clicked!'));
+        option2Button.addEventListener('click', () => alert('Option 2 clicked!'));
     </script>
 </body>
 </html>
+</style>
 
 
 
